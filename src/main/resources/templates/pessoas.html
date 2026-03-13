@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+  Lista de Pessoas
+</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th>Cpf</th>
+    <th>Peso</th>
+    <th>Altura</th>
+    <th>IMC</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="pessoa : ${pessoas}">
+    <td th:text="${pessoa.nome}"></td>
+    <td th:text="${pessoa.cpf}"></td>
+    <td th:text="${pessoa.peso}"></td>
+    <td th:text="${pessoa.altura}"></td>
+    <td th:text="${pessoa.imc}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
